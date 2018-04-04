@@ -2,8 +2,7 @@
 <div class="resume">
   <div class="leftCol m_box">
     <div class="shadow"></div>
-    <!-- <div class="heading" id="myselfpic">
-    </div> -->
+    <!-- <div class="heading"></div> -->
     <div class="section-headline">
       {{ lang.contact }}
     </div>
@@ -133,9 +132,9 @@
       <div class="block-helper"></div>
       <div class="headline">{{education.degree}}</div>
       <div class="subheadline">{{education.timeperiod}}</div>
-      <p class="info">
-        {{education.description}}
-      </p>
+      <div class="info">
+        <p>{{education.description}}</p>
+      </div>
     </div>
   </div>
 
@@ -175,7 +174,7 @@ a {
   h2 {
     text-transform:uppercase;
     display:block;
-    font-size:1.17em;
+    font-size:2.17em;
     -webkit-margin-before:1em;
     -webkit-margin-after:1em;
     -webkit-margin-start:0;
@@ -240,7 +239,7 @@ ul {
 }
 p {
   margin-top:0;
-  margin-bottom:25px;
+  margin-bottom:0;
   font-family:'Roboto', sans-serif;
   font-weight:300;
   font-size:10pt;
@@ -278,7 +277,7 @@ h4 {
   opacity:1;
 }
 .rightCol {
-  width:63.5%;
+  width:66.5%;
   height:100%;
   float:right;
   display:flex;
@@ -287,7 +286,10 @@ h4 {
     width:90%;
     position:relative;
     background-color:#ffffff;
-    padding:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
     margin-top:5px;
     margin-bottom:5px;
     display:inline-block;
@@ -305,10 +307,10 @@ h4 {
       font-weight:300;
     }
     .info {
-      font-size:14px;
+      font-size:13px;
       color:rgba(0,0,0,0.870588);
       margin-bottom:0;
-      padding-top:20px;
+      padding-top:5px;
       .exp-line {
         color: rgba(0, 0, 0, 0.870588) !important;
         padding-top:0;
@@ -366,7 +368,7 @@ h4 {
   }
 }
 .leftCol {
-  width:35%;
+  width:32%;
   height:100%;
   float:left;
   padding:0;
@@ -384,13 +386,13 @@ h4 {
     text-decoration:none;
   }
   .heading {
-    background-color:white;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-    position:relative;
+    //background-color:white;
+    // background-repeat:no-repeat;
+    // background-size:cover;
+    // background-position:center;
+    // position:relative;
     width:100%;
-    height:277px;
+    height:91px;
   }
   .item {
     width:100%;

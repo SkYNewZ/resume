@@ -4,7 +4,7 @@ name:
   middle:
   last: Lemaire
 about: Passionné d’informatique, curieux, motivé, rigoureux, apprécie le travail d’équipe.
-position: Web Dev
+position: Développeur Back-End
 
 birth:
   year: 1997
@@ -12,39 +12,43 @@ birth:
 
 experience:
 - company: Decathlon
-  position: Dévellopeur
+  position: Technicien SI en alternance
   timeperiod: Depuis Juillet 2017
   description: API Google, Outil collaboratif, Plateforme tournante et point d'encrage quant à l'accès à l'information au sein de l'entreprise
   lines:
-    - description: API Google
-    - description: Outil collaboratif
-    - description: Plateforme tournante et point d'encrage quant à l'accès à l'information au sein de l'entreprise
+    - description: Création de scripts Python2.7 utilisant les APIs Google Admin SDK, Drive, Gmail, G+ permettant d'apporter des fonctionnalités non disponibles depuis les interfaces web correspondantes
+    - description: Création d'un outil d'évaluation collaborative développé en Laravel 5.3, sous Docker
+    - description: Mise en place d'un pipeline GitlabEE/Jenkins/Rancher
+    - description: Renforcer une équipe de développeurs sur l'élaboration d'une plateforme unique pour tous les salariés, dévellopée en Symfony2.8 puis Symfony3.4, Angular5, Docker
+    - description: Consulting Docker pour un projet qui avait pour but d'être conteneurisé
 
 - company: Celaneo
-  position: Dévellopeur
+  position: Stagiaire à temps partiel
   timeperiod: Avril 2017 - Juin 2017
-  description: Dévellopeur Web, assurer le support et les évolutions d'un site e-commerce Prestashop/Symfony
+  description: Développeur Web, assurer le support et les évolutions d'un site e-commerce Prestashop/Symfony
   lines:
-    - description: Dévellopeur Web
-    - description: Assurer le support et les évolutions d'un site e-commerce Prestashop/Symfony
+    - description: Assurer le support d'un site E-commerce Prestashop/SCSS
+    - description: Participer à l'élaboration d'un outil de comptabilité en ligne, développé en Symfony3/Twig
 
 - company: Eurobaut
   position: Stage de fin d'études
-  timeperiod: March 2014 - December 2014
+  timeperiod: Septembre 2017 - Octobre 2017
   description: Mise en place d'un serveur VPN, Owncloud. Architecture Debian. Ecrire des scripts bash permettant l'automatisation des tâches
   lines:
-    - description: Architecture Debian
-    - description: Mise en place d'un serveur VPN
-    - description: Organisation des données de l'entreprise
-    - description: Mise en place d'un Owncloud
-    - description: Rsync/Bash script
+    - description: Installation de plusieurs serveurs Synology au sein de l'entreprise avec différents utilisateurs et accès selon les applications
+    - description: Mise en place d'un serveur OpenVPN
+    - description: Organisation des données de l'entreprise afin de mieux correspondre aux besoins de celle-ci
+    - description: Mise en place d'un Owncloud pour remplacer Dropbox
+    - description: Rsync/Bash scripts pour préparer la migration entre les deux SI
 
-- company: Harmonie d'hordain
-  position: Dévellopeur
-  timeperiod: April 2016
-  description: Création d'un site web en WordPress
+- company: Harmonie d'Hordain
+  position: Développeur
+  timeperiod: Depuis April 2016
+  description: Création d'un WordPress pour l'association dans laquelle je suis adhérent
   lines:
-    - description: Création d'un site web en WordPress pour l'association
+    - description: Création d'un WordPress pour l'association dans laquelle je suis adhérent
+    - description: Mise en place de diverses évolutions en fonction de notre public
+    - description: Assurer le référencement naturel
 
 education:
 - degree: Bachelor of Science
@@ -52,7 +56,7 @@ education:
   description: SUPINFO International University
 - degree: Baccalauréat Scientifique
   timeperiod: 2014 - 2015
-  description: Mentien Assez Bien, Option Informatique et Science du Numérique
+  description: Mention assez bien, Option Informatique et Sciences du Numérique
 
 # skill level goes 0 to 100
 skills:
@@ -71,12 +75,12 @@ skills:
 - name: Travis
   logo: https://www.gcppodcast.com//images/post/travis.png
 - name: Linux
-  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/2000px-Tux.svg.png
+  logo: http://educmath.ens-lyon.fr/Educmath/recherche/equipes-associees-13-14/mallette/prototype-mallette/images/linux-logo.png/image_preview
 
-knowledge: Le dévellopement reste ma vocation, mais ayant découvert et montée en compétence de l'intégration continue et du déploiement continu, je reste polyvalent sur ces deux domaines.
+knowledge: Le développement reste ma vocation, mais ayant découvert et montée en compétence sur l'intégration continue et le déploiement continu, je reste polyvalent sur ces deux domaines.
 
 hobbies:
-  - name: Plongée sous marine
+  - name: Plongée sous-marine
   - name: Musicien
   - name: Airsoft
   - name: VTT
@@ -84,7 +88,7 @@ hobbies:
 contact:
   email: quentin@lemairepro.fr
   phone: +33 606467493
-  city: Cambrai
+  city: Estrun
   website: https://www.lemairepro.fr
   github: SkYNewZ
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
