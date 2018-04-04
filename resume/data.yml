@@ -1,0 +1,92 @@
+/* #*/ export const PERSON = `
+name:
+  first: Quentin
+  middle:
+  last: Lemaire
+about: Passionné d’informatique, curieux, motivé, rigoureux, apprécie le travail d’équipe.
+position: Web Dev
+
+birth:
+  year: 1997
+  location: Saint-Saulve
+
+experience:
+- company: Decathlon
+  position: Dévellopeur
+  timeperiod: Depuis Juillet 2017
+  description: API Google, Outil collaboratif, Plateforme tournante et point d'encrage quant à l'accès à l'information au sein de l'entreprise
+  lines:
+    - description: API Google
+    - description: Outil collaboratif
+    - description: Plateforme tournante et point d'encrage quant à l'accès à l'information au sein de l'entreprise
+
+- company: Celaneo
+  position: Dévellopeur
+  timeperiod: Avril 2017 - Juin 2017
+  description: Dévellopeur Web, assurer le support et les évolutions d'un site e-commerce Prestashop/Symfony
+  lines:
+    - description: Dévellopeur Web
+    - description: Assurer le support et les évolutions d'un site e-commerce Prestashop/Symfony
+
+- company: Eurobaut
+  position: Stage de fin d'études
+  timeperiod: March 2014 - December 2014
+  description: Mise en place d'un serveur VPN, Owncloud. Architecture Debian. Ecrire des scripts bash permettant l'automatisation des tâches
+  lines:
+    - description: Architecture Debian
+    - description: Mise en place d'un serveur VPN
+    - description: Organisation des données de l'entreprise
+    - description: Mise en place d'un Owncloud
+    - description: Rsync/Bash script
+
+- company: Harmonie d'hordain
+  position: Dévellopeur
+  timeperiod: April 2016
+  description: Création d'un site web en WordPress
+  lines:
+    - description: Création d'un site web en WordPress pour l'association
+
+education:
+- degree: Bachelor of Science
+  timeperiod: 2015 - 2018
+  description: SUPINFO International University
+- degree: Baccalauréat Scientifique
+  timeperiod: 2014 - 2015
+  description: Mentien Assez Bien, Option Informatique et Science du Numérique
+
+# skill level goes 0 to 100
+skills:
+- name: Docker
+  logo: https://www.droptica.com/sites/droptica.com/files/2017-06/docker.png
+- name: Angular2+
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1000px-Angular_full_color_logo.svg.png
+- name: Node.js
+  logo: https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png
+- name: TypeScript
+  logo: https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png
+- name: Symfony 3+
+  logo: https://cdn.worldvectorlogo.com/logos/symfony.svg
+- name: Rancher
+  logo: https://res.cloudinary.com/nuxeo/image/upload/f_auto,dpr_auto,w_auto,q_auto,c_scale/v1/blog/Rancher-Logo-300x180.png
+- name: Travis
+  logo: https://www.gcppodcast.com//images/post/travis.png
+- name: Linux
+  logo: https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/2000px-Tux.svg.png
+
+knowledge: Le dévellopement reste ma vocation, mais ayant découvert et montée en compétence de l'intégration continue et du déploiement continu, je reste polyvalent sur ces deux domaines.
+
+hobbies:
+  - name: Plongée sous marine
+  - name: Musicien
+  - name: Airsoft
+  - name: VTT
+
+contact:
+  email: quentin@lemairepro.fr
+  phone: +33 606467493
+  city: Cambrai
+  website: https://www.lemairepro.fr
+  github: SkYNewZ
+# en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
+lang: fr
+`
