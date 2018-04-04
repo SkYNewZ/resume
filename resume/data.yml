@@ -1,0 +1,95 @@
+/* #*/ export const PERSON = `
+name:
+  first: Quentin
+  middle:
+  last: Lemaire
+about: Passionné d’informatique, curieux, motivé, rigoureux, apprécie le travail d’équipe.
+position: Développeur Back-End
+
+birth:
+  year: 1997
+  location: Saint-Saulve
+
+experience:
+- company: DECATHLON
+  position: Développeur en alternance
+  timeperiod: Juillet 2017 - Septembre 2018
+  description: Stage de 4 mois puis alternance de 1 mois
+  lines:
+    - description: Création de scripts APIs Google permettant d'apporter des fonctionnalités non disponibles depuis les interfaces web correspondantes
+    - description: Création d'un outil d'évaluation collaborative
+    - description: Mise en place de pipeline automatisés
+    - description: Renforcer une équipe de développeurs sur l'élaboration d'un nouvel Intranet monde
+    - description: Consulting Docker pour un projet qui avait pour but d'être conteneurisé
+  technologies: Symfony3/4, Laravel 5.4, ApiPlatform, Docker, Rancher, Jenkins, Python, Google Apis, Angular 4/5/6
+
+- company: CELANEO
+  position: Stagiaire à temps partiel
+  timeperiod: Avril 2017 - Juin 2017
+  description: Développeur Web, assurer le support et les évolutions d'un site e-commerce
+  lines:
+    - description: Assurer le support d'un site E-commerce
+    - description: Participer à l'élaboration d'un outil de comptabilité en ligne
+  technologies: Prestashop/SCSS, Symfony3/Twig, Docker
+
+- company: EUROBAUT
+  position: Stage de fin d'études
+  timeperiod: Septembre 2017 - Octobre 2017
+  description: Mise en place d'un serveur VPN, Owncloud. Batchs permettant l'automatisation des tâches
+  lines:
+    - description: Installation de plusieurs serveurs Synology au sein de l'entreprise avec différents utilisateurs et accès selon les applications
+    - description: Mise en place d'un serveur VPN
+    - description: Organisation des données de l'entreprise afin de mieux correspondre aux besoins de celle-ci
+    - description: Mise en place d'un Owncloud pour remplacer Dropbox
+    - description: Batch scripts pour préparer la migration entre les deux SI
+  technologies: OpenVPN, Synology, Shell, Owncloud, Rsync
+
+education:
+- degree: Bachelor of Science
+  timeperiod: 2015 - 2018
+  description: SUPINFO International University
+- degree: Baccalauréat Scientifique - Mention assez bien, Option ISN
+  timeperiod: 2014 - 2015
+  description: Lycée FENELON
+
+# skill level goes 0 to 100
+skills:
+- name: Docker
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/docker.png
+- name: Symfony 3/4, ApiPlatform
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/symfony.svg
+- name: Python
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/python.png
+- name: CI/CD
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/travis.png
+- name: SpringBoot
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/spring-boot.png
+- name: Linux
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/linux.png
+- name: Angular2+
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/angular.png
+- name: Rancher
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/rancher.png
+- name: Node.js
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/nodejs.png
+- name: TypeScript
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/typescript.png
+- name: Golang
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/golang.png
+
+knowledge: Le développement reste ma vocation, mais ayant découvert et montée en compétence sur l'intégration continue et le déploiement continu, je reste polyvalent sur ces deux domaines.
+
+hobbies:
+  - name: Veille technologique
+  - name: Plongée sous-marine N3
+  - name: Musicien
+
+contact:
+  email: quentin@lemairepro.fr
+  phone: +33 606467493
+  city: 16 rue des juifs, 59295 Estrun
+  website: https://lemairepro.fr
+  github: SkYNewZ
+# en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
+lang: fr
+`

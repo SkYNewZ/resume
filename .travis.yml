@@ -1,0 +1,32 @@
+language: node_js
+
+node_js:
+  - "11.5.0"
+
+services:
+  - docker
+
+notifications:
+  slack: devopslille:HcTQJRlD5FHkVG5YWqKYZuzs
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+install:
+  - yarn
+
+script:
+  - yarn run export
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_OKEN
+  file_glob: true
+  file: pdf/*.pdf
+  skip_cleanup: true
+  overwrite: true
+  name: "v$TRAVIS_TAG"
+  on:
+    tags: true
