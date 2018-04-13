@@ -80,7 +80,7 @@
       </div>
       <div class="skill" v-for="skill in person.skills" :key="skill.name">
         <div class="right" style="margin-bottom:5px;">
-          <img class="tech-logo" :alt="skill.name" :src="skill.logo">&nbsp;
+          <img class="tech-logo" :src="skill.logo">&nbsp;
           <span>{{skill.name}}&nbsp;</span>
           <!-- <div class="progress">
             <div class="determinate" :style="'width: '+skill.level+'%;'">
