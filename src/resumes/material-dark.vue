@@ -125,6 +125,7 @@
               {{line.description}}
           </li>
           </ul>
+          <p><span class="technologies">Technologies :</span> {{experience.technologies}}</p>
         </div>
     </div>
     <div class="section-headline">{{ lang.education }}</div>
@@ -316,6 +317,9 @@ h4 {
         padding-top:0;
         font-weight: 300;
         margin-bottom: 3px
+      }
+      .technologies {
+        font-weight: bold;
       }
 
       .exp-line:before {
