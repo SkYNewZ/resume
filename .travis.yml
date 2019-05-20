@@ -1,29 +1,44 @@
 language: node_js
 
 node_js:
-  - "11.5.0"
+- 11.5.0
 
 services:
-  - docker
+- docker
 
 cache:
   yarn: true
   directories:
-    - node_modules
+  - node_modules
 
 install:
-  - yarn
+- yarn
 
 script:
-  - yarn run export
+- yarn run export
 
 deploy:
-  provider: releases
-  api_key: $GITHUB_OKEN
-  file_glob: true
-  file: pdf/*.pdf
-  skip_cleanup: true
-  overwrite: true
-  name: "v$TRAVIS_TAG"
-  on:
-    tags: true
+  - provider: s3
+    access_key_id:
+      secure: dMkKLx2XaewLRZCeQ3FGywjqELmfUKu97XgE0KDzf9+DN2DeyjFkNHE3fttFN6ulbVgQykoNDnBYKVvuwuwZ8PmO3hY55F4Qg4nOB5oHdZtfR5k4tKdJbcP1KGxNH/VfzIfxcVOEnFoWeHIaPvNJV0ba6UWulymGaqHFVa3/IWP1stJ7iQ7mjNMKBNdJMzpw7m1PdBLq3ZiBFM/03vfwdyJkLzArPve6NXLLJkJM1i5mXtGvAdkLN/RA2+uyAMi++tGT8JkHXev02Pbadx6P1ZGEQ21eKIR1dz2ydBi6KXdziXdkYJl3VxdZU8SzXnj+QDiUOw+SaTZx7AnL/s8TtfOLaiWJEBSwcW9ZQ7QmWkr0SjaYkKVmGz3fZYpC6H+KiLUNU5ceti+EWXi4B4E6143Ipjl8n9mKFg7ICg13bx9QBx1g2mJo6InrC5O14olD5yi7AarTjVk3Ay3gG79T8OlXVUw1/Iwmp9f7yk6kyHWGa9E9/UJar2BiktyhL8OF0EJ2FMhjz3xiKK7IbwtuE9+nLmXMpjyfKWgU0Nx23HMvgfQ22stOquYGakUV/eiIrBp32yfDYbUzZVOAJQSkqspPdvxRhwbBuqL13Rmu32TWQeqEedWOdN4yQXVTkfzVrMUnRZQ9P0a2GGI4dfwyWwtnbtiCq4bSZxCVv1SVLaA=
+    secret_access_key:
+      secure: idt6FByOsJaLcjuelJ8TKO2WhWreCWkHhw+VZKqsBqqZOeQiXgV2TBSI9kV6mi7zRrhukl3h1RaWScXolwBE4/BL4kw4MEpcdt/WAj86ay2nSSoNl9c3xzPRrAsphc5/QYc666ofHdlZ4caWW1i6GmYZToUyUePsxgagBkpHaeNNm/5CWvIsWo9LjBlmvUWUXBfUiBlscepsT6GsbpjMmGGU5yy47eP+t54hWGKklkgr6XOzzK8p09R/IQQpxMt7A0Wn/i5oJc22m3IjhbhSsxzbGdUMiKJGvNJNQuBs9z1hCrdXENngn1w6H62dILUOt1eztYRPYqOZwUuYDva6SJzyaKZjg9wHNCZJkP5ZUxgNkH0kL3uxpaovTftScw88WrZ//o5ReJuAofNOBBvKYWKcHeuR5qGaQT14bLPy6MWSsRhrO3WLysTitke8TGBBaanGxby+Q3yNvPZAGccDBmBivMoKy4tnSajfqQ2N8Gr1xqwpgJ+At8AC3O8MfpjnX4DeGPfE+CrT292SoetqyZCcep8+/DaPpWtEQQ9LTRYaZqfd1BHEVsJW2JjQPisQI6Bv6MU3/87i2O5pjLLmg5vhi4mPsXP2SyIbw08/QIMcReB7IaxZ2xUZzJkCARV6vo36amdcee4a0QQczJvAFQkUg+D/L85oRN0j6i00UAM=
+    bucket: skynewz
+    local-dir: pdf
+    upload-dir: final-resume
+    skip_cleanup: true
+    acl: public_read
+    region: eu-west-3
+    on:
+      tags: true
+  
+  - provider: releases
+    api_key:
+      secure: JAEWTCCHaJvX4rab9Vj/WTiOhqSt0jEMtBxAqgRtOiBT4hAz4dOIWd7VIGDbyZoQ0xuLjMrAo9LiPt7wTA7wp+pt+3ymmJfHu0U95OQUOm9X+2G1uNqtmOEdIneYvCOzlMOcaXw959aG5QucCiUfdbeHepLBvhqG3OmNz5hjpKicZf7m27AcV11uolJ0gIqgz2wnBD9TPa7JuMJEKNlSrB4aWrOMFgK2mGoq1MP4VvbIclDoUur08HFsCWS0Z39H7BPUHgN0q1Y/ymF1FBVT2XrklHipruztlCf59fYwWqGyaixOeQwk6b26CtMI+gaRQ9xCQrGcCRxERQf5REvLQop5uVdS5jpDLc+LSpSNo6162Mm9/CYNM2KXft2cqEN6dqlMAWqVG9l8FqsdzXwCx/A0UUij6yFeUf3mWnVrCRDUd8QB/1ixkCBUKX6hPIvr/irRyitrb4GMKPDHje7QqSLzAeXuO2XCUE5wW7fXNhA0swyZ8fg8lLn5/Xp0fnwVjjPuEqYCaGphC2+Ii178gHcux1kjmTmj/EgkmcojJcQpyu/nBduC9hDOVmfxf7UARkSi+nqXf8/IxpwPhTJ/HEID6r6kJzafTX22vNPAwvpMOiyF0kuGa6qxsYXcFsu67dtUDtBNtIQ54Obo1u6Sx+pVmWvip5usk/zFZrYFLiQ=
+    file_glob: true
+    file: pdf/*.pdf
+    skip_cleanup: true
+    overwrite: true
+    name: "$TRAVIS_TAG"
+    on:
+      tags: true
