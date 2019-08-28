@@ -280,9 +280,9 @@ h4 {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     margin-top:5px;
-    margin-bottom:5px;
+    margin-bottom:2px;
     display:inline-block;
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     .headline {
