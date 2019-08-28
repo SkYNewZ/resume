@@ -80,13 +80,8 @@
       </div>
       <div class="skill" v-for="skill in person.skills" :key="skill.name">
         <div class="right" style="margin-bottom:5px;">
-          <img class="tech-logo" :src="skill.logo">&nbsp;
+          <img class="tech-logo" :src="person.logo_url + '/' + skill.name.slugify() + '.png'">
           <span>{{skill.name}}&nbsp;</span>
-          <!-- <div class="progress">
-            <div class="determinate" :style="'width: '+skill.level+'%;'">
-              <i class="fa fa-circle"></i>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
@@ -98,11 +93,6 @@
       <div class="skill" v-for="hobby in person.hobbies" :key="hobby.name">
         <div class="right" style="margin-bottom:5px;">
           <span>{{hobby.name}}&nbsp;</span>
-          <!-- <div class="progress">
-            <div class="determinate" :style="'width: '+skill.level+'%;'">
-              <i class="fa fa-circle"></i>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
