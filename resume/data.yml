@@ -11,7 +11,7 @@ birth:
   location: Saint-Saulve
 
 experience:
-- company: SOGETI
+- company: SOGETILABS
   position: Intégrateur applicatif en alternance
   timeperiod: Depuis Novembre 2018
   description: Alternance
@@ -65,26 +65,28 @@ education:
 skills:
 - name: Docker
   logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/docker.png
-- name: Symfony 3/4, ApiPlatform
-  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/symfony.svg
-- name: Python
-  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/python.png
 - name: CI/CD
   logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/travis.png
-- name: SpringBoot
-  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/spring-boot.png
-- name: Linux
-  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/linux.png
-- name: Angular2+
-  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/angular.png
+- name: Python
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/python.png
 - name: Rancher
   logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/rancher.png
+- name: Golang
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/golang.png
+- name: Linux
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/linux.png
+- name: Ansible
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/ansible.png
+- name: Symfony 3/4, ApiPlatform
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/symfony.svg
 - name: Node.js
   logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/nodejs.png
 - name: TypeScript
   logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/typescript.png
-- name: Golang
-  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/golang.png
+- name: Angular2+
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/angular.png
+- name: SpringBoot
+  logo: https://s3.eu-west-3.amazonaws.com/skynewz/resume-assets/spring-boot.png
 
 knowledge: Le développement reste ma vocation, mais ayant découvert et montée en compétence sur l'intégration continue et le déploiement continu, je reste polyvalent sur ces deux domaines.
 
